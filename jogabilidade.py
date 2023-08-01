@@ -1,17 +1,20 @@
 from batalha import batalhar
 from loja import barganhar
 
-def escolherAcao(guarda, personagemSePreprando):
+def escolherAcao(guarda, personagem):
     print("Escolha o que você quer fazer?")
     print(f"[1] - Batalha com o guarda nº {guarda}")
     print("[2] - Entrar na loja")
 
     escolha = int(input())
     if (escolha == 1):
-        personagemSePreprando = batalhar(personagemSePreprando)
+        # que pra batalha é importe também passar 
+        # o guarda envolvido / o inimigo
+        personagem = batalhar(personagem)
     elif (escolha == 2):
-        personagemSePreprando = barganhar(personagemSePreprando)
-    return personagemSePreprando
+        personagem = barganhar(personagem)
+
+    return personagem
 
 
 

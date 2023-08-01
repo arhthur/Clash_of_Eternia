@@ -4,11 +4,13 @@ personagem = {
     "nome": "Mario",
     "dinheiro": 30,
     "stamina": 50,
-    "bolsa": [],
-    "equipamento": []
+    "mochila": [],
+    "equipamentos": []
 }
 
-quantidadeGuardas = 7
+# Ao invés quantidadeGuardas ter uma 
+# lista de guardas
+quantidadeGuardas = 5
 
 print("Boas vindas ao seu pior pesadelo, está na hora de provar que você não é um mediocre. Mate o rei.")
 print(f"Durante o jogo você irá precisar enfrentar desafios gigantes, são {quantidadeGuardas} guardas antes de chegar ao Rei, mate todos eles.")
